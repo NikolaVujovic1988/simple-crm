@@ -4,13 +4,14 @@
 
 .menu-icon {
     cursor: pointer;
+    margin-right: 16px;
 }
 
 .sidenav {
     width: 300px;
 
     .logo-container {
-        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.25);
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.04);
         padding-left: 16px;
         padding-right: 16px;
         min-height: 56px;
@@ -42,7 +43,16 @@ mat-toolbar, mat-toolbar-row {
 
         &:hover {
             cursor: pointer;
-            background-color: rgba($color: #000000, $alpha: 0.1);
+            background-color: rgba($color: #000000, $alpha: 0.04);
+        }
+
+        &:focus {
+            outline: none;
         }
     }
+}
+
+.router-container {
+    padding-top: 16px;
+    padding-left: 56px;
 }
