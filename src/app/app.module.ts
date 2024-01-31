@@ -29,6 +29,8 @@ import { getMessaging, provideMessaging } from '@angular/fire/messaging';
 import { getPerformance, providePerformance } from '@angular/fire/performance';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-config';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+
 
 
 
@@ -55,6 +57,7 @@ import { getRemoteConfig, provideRemoteConfig } from '@angular/fire/remote-confi
     MatDatepickerModule,
     MatNativeDateModule,
     FormsModule,
+    AngularFirestoreModule,
     provideFirebaseApp(() => initializeApp({"projectId":"simple-crm-4bb6f","appId":"1:547697812735:web:1ce796d606054c652b58ca","storageBucket":"simple-crm-4bb6f.appspot.com","apiKey":"AIzaSyAPqI-9ZnQStXEeNCQ-KIVnNHG6hXOAXco","authDomain":"simple-crm-4bb6f.firebaseapp.com","messagingSenderId":"547697812735"})),
     provideAuth(() => getAuth()),
     provideAnalytics(() => getAnalytics()),
