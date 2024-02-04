@@ -14,7 +14,7 @@ export class DialogAddUserComponent {
 
   item$: Observable<any[]>; // Tipizirajte prema potrebi
 
-  constructor(private firestore: AngularFirestore) {
+  constructor(public firestore: AngularFirestore) {
     this.item$ = this.firestore.collection('items').valueChanges(); // Preuzimanje podataka iz Firestore-a
   }
 
